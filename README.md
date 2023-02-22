@@ -1,2 +1,11 @@
-# Hello this is a title
-## Hello this is a subtitle
+# markdown-to-html
+
+## Install dependencies
+```
+npm install
+```
+
+## Run
+```
+node index.js
+```

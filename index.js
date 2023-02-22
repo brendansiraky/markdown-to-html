@@ -49,7 +49,7 @@ function convertSingleFile(path, fileName) {
 const path = `${__dirname}/../../Documents/Obsidian Vault/Solidity`
 
 // Pass in both a path and the file name
-// convertSingleFile(path, 'Functions')
+convertSingleFile(path, 'Functions')
 
 // Only pass in the path where many .md files will be contained
 // convertFolderContents(path)
