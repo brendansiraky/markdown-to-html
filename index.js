@@ -8,11 +8,10 @@ function writeFileToHtml(path, fileName) {
             return
         }
     
-        // Convert the MD to HTML
         const converter = new showdown.Converter();
         const htmlText = converter.makeHtml(markdownText);
     
-        // Write the HTML to a new file
+        // Just so happens that we want to save this to /html folder
         fs.writeFile(`${__dirname}/html/${fileName}.html`, htmlText, function (err) {
             if (err) {
                 console.error(err)
@@ -50,7 +49,7 @@ function convertSingleFile(path, fileName) {
 const path = `${__dirname}/../../Documents/Obsidian Vault/Solidity`
 
 // Pass in both a path and the file name
-convertSingleFile(path, 'Functions')
+// convertSingleFile(path, 'Functions')
 
 // Only pass in the path where many .md files will be contained
-convertFolderContents(path)
+// convertFolderContents(path)
